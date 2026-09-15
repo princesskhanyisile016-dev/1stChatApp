@@ -49,6 +49,34 @@ public class App {
         }
 
         sc.close();
+        // ========== LOGIN (while loop until successful or user types exit) ==========
+boolean loggedIn = false;
+
+while (!loggedIn) {
+    System.out.println("----- Login / Sign In -----");
+    System.out.print("Enter username (or type 'exit' to quit): ");
+    String loginUser = sc.nextLine();
+
+    if (loginUser.equalsIgnoreCase("exit")) {
+        System.out.println("Goodbye!");
+        break;
+    }
+
+    System.out.print("Enter password: ");
+    String loginPass = sc.nextLine();
+
+    // Decision structure for authentication
+    String status = login.returnLoginStatus(loginUser, loginPass);
+    System.out.println("\n" + status + "\n");
+
+    if (status.startsWith("Welcome")) {
+        loggedIn = true; // exit the while loop
+    } else {
+        System.out.println("Login failed. Please try again.\n");
+    }
+}
+        
+        
     }
 }
 
