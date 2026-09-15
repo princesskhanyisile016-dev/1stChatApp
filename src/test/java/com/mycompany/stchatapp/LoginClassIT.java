@@ -78,7 +78,7 @@ public class LoginClassIT {
     }
 
     @Test
-    public void testRegisterUser_CellIncorrect() {
+    public void testRegisterUsePhoneNumberIncorrect() {
         String expected = "Cell phone number incorrectly formatted or does not contain international code.";
         String actual = login.registerUser("kyl_1", "Ch&sec@ke99!", "08966553");
         assertEquals(expected, actual);
@@ -118,4 +118,35 @@ public class LoginClassIT {
         String actual = login.returnLoginStatus("wrong", "wrongpass");
         assertEquals(expected, actual);
     }
+    // ========== REGISTER USER MESSAGE TESTS ==========
+
+    @Test
+    public void testRegisterUserName_Incorrect() {
+        String expected = "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
+        String actual = login.registerUser("kyle!!!!!!!", "Ch&sec@ke99!", "+27838968976");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testRegisterUser_Passwordincorrect() {
+        String expected = "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
+        String actual = login.registerUser("kyl_1", "password", "+27838968976");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testRegisterUser_CellIncorrect() {
+        String expected = "Cell phone number incorrectly formatted or does not contain international code.";
+        String actual = login.registerUser("kyl_1", "Ch&sec@ke99!", "08966553");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testRegisterUser_Successful() {
+        String expected = "Username successfully captured.\nPassword successfully captured.\nCell phone number successfully added.";
+        String actual = login.registerUser("kyl_1", "Ch&sec@ke99!", "+27838968976");
+        assertEquals(expected, actual);
+    }
+
+
 }
