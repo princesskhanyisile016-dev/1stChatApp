@@ -1,1 +1,1 @@
-My part 1 is about registration and login feature, where by a user creates an acc by entering thir username,password and cellphone number starting with +27 S.A .There is object orientated programming structures and other things .My part 1 is about registration and login feature, where by a user creates an acc by entering thir username,password and cellphone number starting with +27 S.A .There is object orientated programming structures and other things .
+Part 2 is about sending messages, the code has loops,if statements, arrays and storing messages in JSON file.
