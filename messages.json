@@ -1,8 +1,20 @@
-[
-  {
+
+[{
     "messageID": "1963954285",
     "recipient": "+27612741896",
     "message": "CAN I MAKE YOU TEA?",
     "messageHash": "19:1:CANTEA?"
+  },
+  {
+    "messageID": "8907751273",
+    "recipient": "+27838968976",
+    "message": "Hello there",
+    "messageHash": "89:1:HELLOTHERE"
+  },
+  {
+    "messageID": "2048144030",
+    "recipient": "+27602549714",
+    "message": "pls cancel",
+    "messageHash": "20:1:PLSCANCEL"
   }
 ]
