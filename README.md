@@ -1,2 +1,2 @@
-Part 2 is about sending messages, the code has loops, if statements, arrays and storing messages in JSON file.
-And options.
+Part 3 of the ST Chat App focuses on data persistence, array management, advanced search functionality, and report generation. Building on the authentication module from Part 1 and message creation from Part 2, this section extends the application to populate non-hardcoded arrays for sent, stored, and disregarded messages, read stored JSON data into memory, allow deletion by message hash, and output comprehensive summary reports. It also integrates automated JUnit 4 unit testing to validate key array operations against official project test data.   
+
