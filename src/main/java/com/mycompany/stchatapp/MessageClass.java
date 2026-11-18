@@ -25,7 +25,7 @@ public class MessageClass {
     private static int totalMessagesSent = 0;
     private static int messageCounter = 0;
 
-    // Required Arrays / Collections for Part 3[cite: 3]
+    // Required Arrays / Collections for Part 
     private static final List<MessageClass> sentMessages = new ArrayList<>();
     private static final List<MessageClass> disregardedMessages = new ArrayList<>();
     private static final List<MessageClass> storedMessages = new ArrayList<>();
@@ -177,7 +177,7 @@ public class MessageClass {
         Files.writeString(path, updated.toString());
     }
 
-    // --- Part 3 Features[cite: 3] ---
+    // --- Part 3 Features
     
     // a. Display sender and recipient of all stored messages[cite: 3]
     public String displayStoredSendersAndRecipients() {
@@ -191,7 +191,7 @@ public class MessageClass {
         return sb.toString();
     }
 
-    // b. Display the longest stored message[cite: 3]
+    // b. Display the longest stored message
     public String getLongestStoredMessage() {
         if (storedMessages.isEmpty() && sentMessages.isEmpty()) {
             return "No messages available.";
@@ -208,7 +208,7 @@ public class MessageClass {
         return longest.message;
     }
 
-    // c. Search for a message ID and display corresponding recipient and message[cite: 3]
+    // c. Search for a message ID and display corresponding recipient and message
     public String searchMessageByID(String targetID) {
         List<MessageClass> all = new ArrayList<>(storedMessages);
         all.addAll(sentMessages);
@@ -236,7 +236,7 @@ public class MessageClass {
         return sb.toString().trim();
     }
 
-    // e. Delete a message using the message hash[cite: 3]
+    // e. Delete a message using the message hash
     public String deleteMessageByHash(String targetHash) {
         boolean removed = storedMessages.removeIf(m -> m.messageHash.equalsIgnoreCase(targetHash))
                         | sentMessages.removeIf(m -> m.messageHash.equalsIgnoreCase(targetHash))
