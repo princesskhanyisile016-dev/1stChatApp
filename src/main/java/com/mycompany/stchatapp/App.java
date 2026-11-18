@@ -182,7 +182,7 @@ public class App {
                     System.out.println(messageManager.printMessages());
                     break;
 
-                case "3": // Part 3 Stored Messages Sub-menu[cite: 3]
+                case "3": // Part 3 Stored Messages Sub-menu
                     boolean storedRunning = true;
                     while (storedRunning) {
                         System.out.println("\n===== Stored Messages Menu =====");
