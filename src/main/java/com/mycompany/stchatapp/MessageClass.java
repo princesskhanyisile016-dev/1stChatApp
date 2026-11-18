@@ -25,7 +25,7 @@ public class MessageClass {
     private static int totalMessagesSent = 0;
     private static int messageCounter = 0;
 
-    // Required Arrays / Collections for Part 
+    // Required Arrays / Collections 
     private static final List<MessageClass> sentMessages = new ArrayList<>();
     private static final List<MessageClass> disregardedMessages = new ArrayList<>();
     private static final List<MessageClass> storedMessages = new ArrayList<>();
